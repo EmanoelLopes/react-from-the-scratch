@@ -5,6 +5,11 @@
       "pragma": "React",
       "version": "^16.5.0"
     },
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    },
     "propWrapperFunctions": ["forbidExtraProps"]
   },
   "parser": "babel-eslint",

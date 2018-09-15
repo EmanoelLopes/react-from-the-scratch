@@ -10,11 +10,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: 'babel-loader',
-        options: { 
-          presets: ['@babel/preset-env'] 
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
         }
       },
       {
@@ -38,8 +40,12 @@ module.exports = {
       }
     ]
   },
-  resolve: { 
-    extensions: ['*', '.js', '.jsx'] 
+  resolve: {
+    modules: [path.resolve(__dirname, './src'), 'node_modules'],
+    extensions: ['*', '.js', '.jsx'],
+    alias: {
+      src: path.resolve(__dirname, './src')
+    }
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
