@@ -8,7 +8,14 @@ const plugins = {
     template: './public/index.html',
     filename: 'index.html',
     title: 'React App',
-    minify: true
+    inject: false,
+    mobile: true,
+    lang: 'pt-BR',
+    minify: {
+      collapseWhitespace: true,
+      preserveLineBreaks: false,
+      collapseInlineTagWhitespace: true
+    },
   }),
   css: new MiniCssExtractPlugin({
     filename: "[name].[hash].css",
