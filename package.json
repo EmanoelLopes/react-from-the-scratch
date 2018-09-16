@@ -1,8 +1,8 @@
 {
   "name": "react-app",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Simple React and Webpack 4 boilerplate",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "webpack-dev-server --mode development --colors --hide-modules",
     "serve": "npm start",
@@ -34,6 +34,8 @@
     "babel-eslint": "^9.0.0",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-import-resolver-webpack": "^0.10.1",

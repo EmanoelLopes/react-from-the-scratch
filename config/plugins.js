@@ -8,7 +8,6 @@ const plugins = {
     template: './public/index.html',
     filename: 'index.html',
     title: 'React App',
-    inject: false,
     mobile: true,
     lang: 'pt-BR',
     minify: {
