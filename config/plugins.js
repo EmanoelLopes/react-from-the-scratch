@@ -7,7 +7,7 @@ const plugins = {
   html: new HtmlWebPackPlugin({
     template: './public/index.html',
     filename: 'index.html',
-    title: 'Mercado Eletrônico - ME Lite',
+    title: 'React App',
     minify: true
   }),
   css: new MiniCssExtractPlugin({

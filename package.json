@@ -1,7 +1,7 @@
 {
-  "name": "me-lite",
+  "name": "react-app",
   "version": "2.0.0",
-  "description": "ME Lite - a version of meweb with just some few features like approve and refuse orders and requests",
+  "description": "Simple React and Webpack 4 boilerplate",
   "private": true,
   "scripts": {
     "start": "webpack-dev-server --mode development --colors --hide-modules",
