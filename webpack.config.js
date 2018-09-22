@@ -1,6 +1,7 @@
 const path = require('path');
+const baseConfig = require('./config/base.config');
 const plugins = require('./config/plugins');
-const baseConfig = require('./config/base.config')
+const devServer = require('./config/devServer');
 
 module.exports = {
   entry: './src/index.js',
@@ -16,19 +17,7 @@ module.exports = {
       src: path.resolve(__dirname, './src')
     }
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'public'),
-    port: 3000,
-    // https: true,
-    hot: true,
-    hotOnly: true,
-    proxy: {
-      '/do/api/v1': {
-        target: 'https://localhost:9001',
-        secure: false
-      }
-    },
-  },
+  devServer,
   plugins: [
     plugins.hot,
     plugins.html,

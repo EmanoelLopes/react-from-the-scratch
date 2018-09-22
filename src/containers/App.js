@@ -7,7 +7,7 @@ function App() {
     <React.Fragment>
       <CssBaseline>
         <div className="app-wrapper">
-          <h1>React App 🚀</h1>
+          <h1>🚀 React App 🚀</h1>
         </div>
       </CssBaseline>
     </React.Fragment>
